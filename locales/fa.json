@@ -162,7 +162,7 @@
       "onboardingBadgeText": "جدید",
       "resourceLoadingAccessibilityLabel": "در حال بارگذاری {resourceNamePlural}…",
       "selectAllLabel": "انتخاب همه {resourceNamePlural}",
-      "selected": "{selectedItemsCount} selected",
+      "selected": "{selectedItemsCount} انتخاب شده",
       "undo": "برگرداندن",
       "selectAllItems": "انتخاب همه {itemsLength}+ {resourceNamePlural}",
       "selectItem": "انتخاب {resourceName}",
