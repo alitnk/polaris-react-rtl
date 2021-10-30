@@ -9,14 +9,14 @@ $control-vertical-adjustment: rem(2px);
   @include unstyled-link;
   width: 100%;
   min-height: $min-height;
-  text-align: left;
+  text-align: right;
   border-radius: var(--p-border-radius-base);
   margin-top: spacing(tight) / 2;
 }
 
 .SingleSelectOption {
   @include unstyled-button;
-  text-align: left;
+  text-align: right;
   @include focus-ring;
 
   &.focused:not(:active) {
@@ -77,8 +77,8 @@ $control-vertical-adjustment: rem(2px);
   flex-shrink: 0;
   width: var(--p-choice-size);
   height: var(--p-choice-size);
-  margin-right: spacing(tight);
-  margin-left: calc(-1 * var(--p-choice-margin));
+  margin-left: spacing(tight);
+  margin-right: calc(-1 * var(--p-choice-margin));
 }
 
 .disabled {

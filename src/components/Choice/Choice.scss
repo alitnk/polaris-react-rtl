@@ -22,7 +22,7 @@ $control-vertical-adjustment: rem(2px);
 
   .Control {
     margin-top: 0;
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -49,7 +49,7 @@ $control-vertical-adjustment: rem(2px);
   width: var(--p-choice-size);
   height: var(--p-choice-size);
   margin-top: var(--p-override-none);
-  margin-right: spacing(tight);
+  margin-left: spacing(tight);
 
   > * {
     width: 100%;
@@ -66,7 +66,7 @@ $control-vertical-adjustment: rem(2px);
 }
 
 .Descriptions {
-  padding-left: calc(
+  padding-right: calc(
     #{spacing(tight)} + var(--p-choice-size, #{$control-size})
   );
 }

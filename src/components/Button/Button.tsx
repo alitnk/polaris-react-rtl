@@ -242,7 +242,7 @@ export function Button({
         active={disclosureActive}
         onClose={toggleDisclosureActive}
         activator={connectedDisclosureActivator}
-        preferredAlignment="right"
+        preferredAlignment="left"
       >
         <ActionList
           items={connectedDisclosure.actions}

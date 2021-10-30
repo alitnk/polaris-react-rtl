@@ -11,7 +11,7 @@ $indicator-position: rem(-3px);
   position: absolute;
   z-index: 1;
   top: $indicator-position;
-  right: $indicator-position;
+  left: $indicator-position;
   width: $indicator-size;
   height: $indicator-size;
   border-radius: 100%;

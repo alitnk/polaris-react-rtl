@@ -1,6 +1,10 @@
 import React, {PureComponent, createRef} from 'react';
 import debounce from 'lodash/debounce';
 import isEqual from 'lodash/isEqual';
+import {
+  getNormalizedScrollLeft,
+  setNormalizedScrollLeft,
+} from 'normalize-scroll-left';
 
 import {classNames} from '../../utilities/css';
 import {useI18n} from '../../utilities/i18n';
@@ -79,8 +83,8 @@ class DataTableInner extends PureComponent<CombinedProps, DataTableState> {
   state: DataTableState = {
     condensed: false,
     columnVisibilityData: [],
-    isScrolledFarthestLeft: true,
-    isScrolledFarthestRight: false,
+    isScrolledFarthestLeft: false,
+    isScrolledFarthestRight: true,
   };
 
   private dataTable = createRef<HTMLDivElement>();
@@ -218,10 +222,14 @@ class DataTableInner extends PureComponent<CombinedProps, DataTableState> {
 
       if (headerCells.length > 0) {
         const firstVisibleColumnIndex = headerCells.length - 1;
-        const tableLeftVisibleEdge = scrollContainer.scrollLeft;
+        const tableLeftVisibleEdge = getNormalizedScrollLeft(
+          scrollContainer,
+          'rtl',
+        );
 
         const tableRightVisibleEdge =
-          scrollContainer.scrollLeft + dataTable.offsetWidth;
+          getNormalizedScrollLeft(scrollContainer, 'rtl') +
+          dataTable.offsetWidth;
 
         const tableData = {
           firstVisibleColumnIndex,
@@ -233,8 +241,7 @@ class DataTableInner extends PureComponent<CombinedProps, DataTableState> {
           measureColumn(tableData),
         );
 
-        const lastColumn =
-          columnVisibilityData[columnVisibilityData.length - 1];
+        const lastColumn = columnVisibilityData[0];
 
         return {
           columnVisibilityData,
@@ -269,10 +276,13 @@ class DataTableInner extends PureComponent<CombinedProps, DataTableState> {
       }
 
       if (scrollContainer) {
-        scrollContainer.scrollLeft =
+        setNormalizedScrollLeft(
+          scrollContainer,
           direction === 'right'
-            ? currentColumn.rightEdge
-            : previousColumn.leftEdge;
+            ? currentColumn.leftEdge
+            : Math.max(currentColumn.rightEdge - previousColumn.leftEdge, 0),
+          'rtl',
+        );
 
         requestAnimationFrame(() => {
           this.setState((prevState) => ({

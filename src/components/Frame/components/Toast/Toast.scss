@@ -24,8 +24,8 @@ $Backdrop-opacity: 0.88;
 }
 
 .Action {
-  margin-left: spacing(extra-loose);
-  margin-right: spacing();
+  margin-left: spacing();
+  margin-right: spacing(extra-loose);
 }
 
 .error {
@@ -43,7 +43,7 @@ $Backdrop-opacity: 0.88;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: (-1 * spacing());
+  margin-left: (-1 * spacing());
   padding: 0 spacing();
   border: none;
   appearance: none;
@@ -54,7 +54,7 @@ $Backdrop-opacity: 0.88;
 
   @include breakpoint-after($breakpoint) {
     align-self: flex-start;
-    margin: (-1 * spacing(tight)) (-1 * spacing()) (-1 * spacing(tight)) 0;
+    margin: (-1 * spacing(tight)) 0 (-1 * spacing(tight)) (-1 * spacing());
     padding: (1.5 * spacing(tight)) spacing() spacing(tight);
   }
 

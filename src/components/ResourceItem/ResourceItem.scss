@@ -42,7 +42,7 @@ $resource-list-item-variables: (
   &:not(.persistActions) {
     // stylelint-disable-next-line selector-max-combinators
     .Actions {
-      right: spacing();
+      left: spacing();
     }
   }
 
@@ -83,7 +83,7 @@ $resource-list-item-variables: (
   position: absolute;
   z-index: resource-list-item(clickable-stacking-order);
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -142,8 +142,8 @@ $resource-list-item-variables: (
   min-height: resource-list-item(min-height);
   justify-content: center;
   align-items: center;
-  margin: (-1 * resource-list-item(padding)) spacing(extra-tight)
-    (-1 * resource-list-item(padding)) resource-list-item(control-indent);
+  margin: (-1 * resource-list-item(padding)) resource-list-item(control-indent)
+    (-1 * resource-list-item(padding)) spacing(extra-tight);
   display: flex;
 
   @include breakpoint-before(resource-list-item(breakpoint-small), false) {
@@ -157,9 +157,9 @@ $resource-list-item-variables: (
 
 .selectable {
   width: calc(100% + #{resource-list-item(translate-offset)});
-  transform: translateX(-1 * resource-list-item(translate-offset));
+  transform: translateX(resource-list-item(translate-offset));
   transition: transform easing() duration();
-  margin-right: -1 * resource-list-item(translate-offset);
+  margin-left: -1 * resource-list-item(translate-offset);
 
   &.selectMode {
     transform: translateX(0);
@@ -168,13 +168,13 @@ $resource-list-item-variables: (
   @include breakpoint-after(resource-list-item(breakpoint-small)) {
     width: 100%;
     transform: translateX(0);
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 .Media {
   flex: 0 0 auto;
-  margin-right: spacing(loose);
+  margin-left: spacing(loose);
   color: inherit;
   text-decoration: none;
 }
@@ -213,7 +213,7 @@ $resource-list-item-variables: (
     flex-basis: auto;
     align-items: center;
     margin-top: 0;
-    margin-left: spacing();
+    margin-right: spacing();
     pointer-events: initial;
     height: 100%;
 
@@ -226,7 +226,7 @@ $resource-list-item-variables: (
 .Disclosure {
   position: relative;
   top: -1 * resource-list-item(padding);
-  right: -1 * spacing();
+  left: -1 * spacing();
   display: none;
   width: resource-list-item(disclosure-width);
   min-height: resource-list-item(min-height);

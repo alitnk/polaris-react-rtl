@@ -10,7 +10,7 @@ $shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: $shadow;
 
   .LogoContainer {
-    border-right: none;
+    border-left: none;
   }
 
   .ContextControl {
@@ -77,7 +77,7 @@ $shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .Action {
-  margin-left: spacing(tight);
+  margin-right: spacing(tight);
 }
 
 .ContextControl {

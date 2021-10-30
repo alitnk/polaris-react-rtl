@@ -20,7 +20,7 @@ $chekbox-label-margin: rem(20px);
   cursor: pointer;
   user-select: none;
   text-decoration: none;
-  text-align: left;
+  text-align: right;
   border-radius: var(--p-border-radius-base);
   width: 100%;
   background: var(--p-surface);
@@ -30,8 +30,8 @@ $chekbox-label-margin: rem(20px);
   border-bottom-color: var(--p-border-shadow-subdued);
 
   [data-buttongroup-segmented='true'] & {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   &:hover {
@@ -87,7 +87,7 @@ $chekbox-label-margin: rem(20px);
   pointer-events: none;
   height: var(--p-choice-size);
   width: var(--p-choice-size);
-  margin-left: calc(
+  margin-right: calc(
     -1 * #{spacing(tight) + rem(1px)} - var(--p-control-border-width)
   ); // 1px accounts for border
 }
@@ -100,5 +100,5 @@ $chekbox-label-margin: rem(20px);
   text-overflow: ellipsis;
   // padding to fix the bottom of letters being cutoff by overflow: hidden
   padding: rem(1px) 0;
-  margin-left: calc(#{$chekbox-label-margin} - var(--p-control-border-width));
+  margin-right: calc(#{$chekbox-label-margin} - var(--p-control-border-width));
 }

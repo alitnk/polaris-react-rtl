@@ -72,7 +72,7 @@ $stacking-order: (
   z-index: z-index(input, $stacking-order);
   height: $new-input-height;
   width: 100%;
-  padding: 0 0 0 $search-icon-width;
+  padding: 0 $search-icon-width 0 0;
   border: none;
   background-color: transparent;
   outline: none;
@@ -97,7 +97,7 @@ $stacking-order: (
   position: absolute;
   z-index: z-index(icon, $stacking-order);
   top: 50%;
-  left: spacing(tight);
+  right: spacing(tight);
   display: flex;
   height: $icon-size;
   pointer-events: none;

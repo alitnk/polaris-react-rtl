@@ -46,7 +46,7 @@ $range-thumb-border-error: rem(2px) solid color('red');
     var(--selected-range) var(--Polaris-RangeSlider-progress-upper),
     var(--unselected-range) var(--Polaris-RangeSlider-progress-upper),
     var(--unselected-range) 100%;
-  background-image: linear-gradient(to right, var(--gradient-colors));
+  background-image: linear-gradient(to left, var(--gradient-colors));
 
   .error & {
     --selected-range: #{var(--p-action-critical)};
@@ -56,7 +56,7 @@ $range-thumb-border-error: rem(2px) solid color('red');
       var(--selected-range) var(--Polaris-RangeSlider-progress-upper),
       var(--unselected-range) var(--Polaris-RangeSlider-progress-upper),
       var(--unselected-range) 100%;
-    background-image: linear-gradient(to right, var(--gradient-colors));
+    background-image: linear-gradient(to left, var(--gradient-colors));
   }
 
   .disabled & {
@@ -113,12 +113,12 @@ $range-output-spacing: rem(16px);
 
 .Prefix {
   flex: 0 0 auto;
-  margin-right: spacing(tight);
+  margin-left: spacing(tight);
 }
 
 .Suffix {
   flex: 0 0 auto;
-  margin-left: spacing(tight);
+  margin-right: spacing(tight);
 }
 
 .Output {
@@ -131,7 +131,7 @@ $range-output-spacing: rem(16px);
   transition-property: opacity, visibility, bottom;
   transition-duration: var(--p-duration-1-5-0);
   transition-timing-function: var(--p-ease);
-  transform: translateX(calc(-50% + #{$range-thumb-size / 2}));
+  transform: translateX(calc(50% + #{$range-thumb-size / 2}));
 
   .Thumbs:hover + &,
   .Thumbs:focus + & {

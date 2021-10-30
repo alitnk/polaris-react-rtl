@@ -16,7 +16,7 @@ $nav-max-width: rem(360px);
   min-height: 100%;
   background-color: var(--p-background);
   -webkit-overflow-scrolling: touch;
-  border-right: border('divider');
+  border-left: border('divider');
 
   @include safe-area-for(padding-bottom, 0, bottom);
 
@@ -26,7 +26,7 @@ $nav-max-width: rem(360px);
 
   @include breakpoint-after(nav-min-window-corrected()) {
     max-width: layout-width(nav);
-    @include safe-area-for(max-width, layout-width(nav), left);
+    @include safe-area-for(max-width, layout-width(nav), right);
   }
 }
 
@@ -67,8 +67,8 @@ $nav-max-width: rem(360px);
     align-items: center;
     height: top-bar-height();
     padding: 0 spacing(tight) 0 spacing(base);
-    @include safe-area-for(flex-basis, top-bar-height(), left);
-    @include safe-area-for(padding-left, spacing(), left);
+    @include safe-area-for(flex-basis, top-bar-height(), right);
+    @include safe-area-for(padding-right, spacing(), right);
   }
 }
 
@@ -95,12 +95,12 @@ $disabled-fade: 0.6;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -1 * spacing(tight);
+    right: -1 * spacing(tight);
     height: 100%;
     width: $active-indicator-width;
     background-color: var(--p-action-primary);
-    border-top-right-radius: var(--p-border-radius-base);
-    border-bottom-right-radius: var(--p-border-radius-base);
+    border-top-left-radius: var(--p-border-radius-base);
+    border-bottom-left-radius: var(--p-border-radius-base);
   }
 
   @include high-contrast-outline;
@@ -139,7 +139,7 @@ $disabled-fade: 0.6;
 }
 
 .Badge {
-  margin-left: spacing(tight);
+  margin-right: spacing(tight);
   display: inline-flex;
   margin-top: spacing(tight);
 
@@ -194,7 +194,7 @@ $disabled-fade: 0.6;
   display: flex;
   align-items: center;
   height: nav(mobile-height);
-  margin-right: spacing(extra-tight);
+  margin-left: spacing(extra-tight);
   padding: spacing(extra-tight) spacing();
   border-radius: var(--p-border-radius-base);
 
@@ -242,7 +242,7 @@ $disabled-fade: 0.6;
 $secondary-item-font-size: rem(15px);
 .SecondaryNavigation {
   flex-basis: 100%;
-  margin-left: 0;
+  margin-right: 0;
   overflow-x: visible;
 
   &.isExpanded {
@@ -258,7 +258,7 @@ $secondary-item-font-size: rem(15px);
     font-weight: 500;
     line-height: nav(item-line-height);
     color: var(--p-text-subdued);
-    padding-left: nav(icon-size) + spacing(extra-loose) - spacing(extra-tight);
+    padding-right: nav(icon-size) + spacing(extra-loose) - spacing(extra-tight);
 
     &:hover {
       color: var(--p-text-subdued);
@@ -315,7 +315,7 @@ $secondary-item-font-size: rem(15px);
 }
 
 .SecondaryNavigation-noIcon {
-  margin-left: spacing();
+  margin-right: spacing();
 }
 
 // Section styles
@@ -324,7 +324,7 @@ $secondary-item-font-size: rem(15px);
   flex: 0 0 auto;
   padding: spacing() 0;
   padding-top: 0;
-  @include safe-area-for(padding-left, 0, left);
+  @include safe-area-for(padding-right, 0, right);
 
   + .Section {
     padding-top: spacing(extra-tight);
@@ -345,7 +345,7 @@ $secondary-item-font-size: rem(15px);
   display: flex;
   align-items: center;
   min-height: nav(desktop-nav-height);
-  padding-left: spacing();
+  padding-right: spacing();
 
   .Text {
     font-size: font-size(subheading);
@@ -362,7 +362,7 @@ $secondary-item-font-size: rem(15px);
     display: flex;
     align-items: center;
     height: nav(mobile-nav-height);
-    margin-right: spacing(extra-tight);
+    margin-left: spacing(extra-tight);
     padding: spacing(extra-tight) spacing();
     border-radius: var(--p-border-radius-base);
 
@@ -447,5 +447,5 @@ $secondary-item-font-size: rem(15px);
 }
 
 .SecondaryNavigation-noIcon .Item {
-  padding-left: spacing(tight) + spacing(extra-tight);
+  padding-right: spacing(tight) + spacing(extra-tight);
 }

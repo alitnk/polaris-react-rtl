@@ -23,9 +23,9 @@ export function Connected({children, left, right}: ConnectedProps) {
 
   return (
     <div className={styles.Connected}>
-      {leftConnectionMarkup}
-      <Item position="primary">{children}</Item>
       {rightConnectionMarkup}
+      <Item position="primary">{children}</Item>
+      {leftConnectionMarkup}
     </div>
   );
 }

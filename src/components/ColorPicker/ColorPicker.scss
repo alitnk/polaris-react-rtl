@@ -43,7 +43,7 @@ $stacking-order: (
   cursor: pointer;
 
   .Dragger {
-    right: 0.5 * $dragger-size;
+    left: 0.5 * $dragger-size;
     margin: 0;
   }
 
@@ -57,7 +57,7 @@ $stacking-order: (
     position: absolute;
     z-index: z-index(adjustments, $stacking-order);
     top: 0;
-    left: 0;
+    right: 0;
     display: block;
     height: 100%;
     width: 100%;
@@ -66,7 +66,7 @@ $stacking-order: (
   }
 
   &::before {
-    background: linear-gradient(to right, white, transparent);
+    background: linear-gradient(to left, white, transparent);
   }
 
   &::after {
@@ -100,7 +100,7 @@ $huepicker-bottom-padding-start: $picker-size - $dragger-size;
   overflow: hidden;
   height: $picker-size;
   width: rem(24px);
-  margin-left: spacing(tight);
+  margin-right: spacing(tight);
   border-width: var(--p-border-radius-base);
   border-radius: $picker-size * 0.5;
 }
@@ -126,7 +126,7 @@ $huepicker-bottom-padding-start: $picker-size - $dragger-size;
   position: absolute;
   z-index: z-index(color, $stacking-order);
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   pointer-events: none;

@@ -4,7 +4,7 @@ $item-min-size: rem(220px);
 
 .FormLayout {
   margin-top: -1 * spacing();
-  margin-left: -1 * spacing(loose);
+  margin-right: -1 * spacing(loose);
 }
 
 .Title {
@@ -25,7 +25,7 @@ $item-min-size: rem(220px);
 .Item {
   flex: 1 1 $item-min-size;
   margin-top: spacing();
-  margin-left: spacing(loose);
+  margin-right: spacing(loose);
   max-width: calc(100% - #{spacing(loose)});
 
   .grouped & {

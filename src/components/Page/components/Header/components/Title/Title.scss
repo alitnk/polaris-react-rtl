@@ -38,7 +38,7 @@
 
   .Title {
     display: inline;
-    margin-right: spacing(tight);
+    margin-left: spacing(tight);
 
     // stylelint-disable-next-line selector-max-combinators
     > * {

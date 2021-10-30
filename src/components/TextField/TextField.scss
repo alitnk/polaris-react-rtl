@@ -108,7 +108,7 @@ $stacking-order: (
   color: var(--p-text);
 
   .Prefix + & {
-    padding-left: 0;
+    padding-right: 0;
   }
 
   &:disabled {
@@ -154,7 +154,7 @@ $stacking-order: (
 }
 
 .Input-suffixed {
-  padding-right: 0;
+  padding-left: 0;
 }
 
 .Input-alignRight {
@@ -194,13 +194,13 @@ $stacking-order: (
 }
 
 .Prefix {
-  margin-left: $backdrop-horizontal-spacing;
-  margin-right: $prefix-horizontal-spacing;
+  margin-right: $backdrop-horizontal-spacing;
+  margin-left: $prefix-horizontal-spacing;
 }
 
 .Suffix {
-  margin-left: $addon-horizontal-spacing;
-  margin-right: $backdrop-horizontal-spacing;
+  margin-right: $addon-horizontal-spacing;
+  margin-left: $backdrop-horizontal-spacing;
 }
 
 .CharacterCount {
@@ -208,7 +208,7 @@ $stacking-order: (
   z-index: z-index(contents, $stacking-order);
   margin: 0 $backdrop-horizontal-spacing 0 $addon-horizontal-spacing;
   pointer-events: none;
-  text-align: right;
+  text-align: left;
 }
 
 .AlignFieldBottom {
@@ -293,12 +293,12 @@ $stacking-order: (
   }
 
   &:first-child {
-    border-top-right-radius: var(--p-text-field-spinner-border-radius);
+    border-top-left-radius: var(--p-text-field-spinner-border-radius);
     margin-bottom: var(--p-text-field-spinner-offset);
   }
 
   &:last-child {
-    border-bottom-right-radius: var(--p-text-field-spinner-border-radius);
+    border-bottom-left-radius: var(--p-text-field-spinner-border-radius);
   }
 
   &:not(:first-child) {

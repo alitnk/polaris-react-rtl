@@ -5,11 +5,11 @@
 
 @mixin stack-spacing($spacing: base) {
   margin-top: -1 * spacing($spacing);
-  margin-left: -1 * spacing($spacing);
+  margin-right: -1 * spacing($spacing);
 
   > .Item:not(:empty) {
     margin-top: spacing($spacing);
-    margin-left: spacing($spacing);
+    margin-right: spacing($spacing);
     max-width: 100%;
   }
 }
@@ -100,10 +100,10 @@
 
 .vertical {
   flex-direction: column;
-  margin-left: spacing(none);
+  margin-right: spacing(none);
 
   > .Item {
-    margin-left: spacing(none);
+    margin-right: spacing(none);
   }
 }
 

@@ -61,7 +61,7 @@ export const Card: React.FunctionComponent<CardProps> & {
   primaryFooterAction,
   secondaryFooterActions,
   secondaryFooterActionsDisclosureText,
-  footerActionAlignment = 'right',
+  footerActionAlignment = 'left',
 }: CardProps) {
   const i18n = useI18n();
   const {

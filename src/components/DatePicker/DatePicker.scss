@@ -11,13 +11,13 @@ $range-end-border-radius: rem(30px);
   display: flex;
   flex-wrap: wrap;
   margin-top: -1 * spacing();
-  margin-left: -1 * spacing();
+  margin-right: -1 * spacing();
 }
 
 .MonthContainer {
   flex: 1 1 rem(230px);
   margin-top: spacing();
-  margin-left: spacing();
+  margin-right: spacing();
   max-width: calc(100% - #{spacing()});
   min-width: rem(230px);
 }

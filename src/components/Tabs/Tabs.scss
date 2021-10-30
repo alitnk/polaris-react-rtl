@@ -170,7 +170,7 @@ $focus-state-box-shadow-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   min-height: $item-min-height;
   padding: $item-vertical-padding spacing();
-  text-align: left;
+  text-align: right;
   cursor: pointer;
   border-radius: var(--p-border-radius-base);
 
@@ -207,7 +207,7 @@ $focus-state-box-shadow-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   border: none;
   outline: none;
-  margin: 1px 1px -1px 0;
+  margin: 1px 0 -1px 1px;
 
   &:hover,
   &:focus {

@@ -15,7 +15,7 @@ $sheet-desktop-width: rem(380px);
   }
 
   @include frame-when-nav-displayed {
-    right: 0;
+    left: 0;
     width: $sheet-desktop-width;
   }
 
@@ -59,10 +59,10 @@ $sheet-desktop-width: rem(380px);
 .Right {
   will-change: transform;
   transition: transform duration('slow') easing('base');
-  transform-origin: right;
+  transform-origin: left; // This doesn't make much sense, does it?
 }
 .enterRight {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 .enterRightActive {
   transform: translateX(0%);
@@ -71,5 +71,5 @@ $sheet-desktop-width: rem(380px);
   transform: translateX(0%);
 }
 .exitRightActive {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }

@@ -20,7 +20,7 @@ $control-size: rem(16px);
 
 .ChoiceChildren {
   margin-bottom: spacing(tight);
-  padding-left: calc(
+  padding-right: calc(
     #{spacing(tight)} + var(--p-choice-size, #{$control-size})
   );
 }

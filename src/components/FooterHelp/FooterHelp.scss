@@ -18,7 +18,7 @@ $border-radius: 999px;
 .Content {
   display: inline-flex;
   align-items: center;
-  padding: spacing(loose) spacing(loose) spacing(loose) spacing();
+  padding: spacing(loose) spacing() spacing(loose) spacing(loose);
   border-top: var(--p-override-none);
   border-bottom: var(--p-override-none);
   width: 100%;
@@ -32,7 +32,7 @@ $border-radius: 999px;
 }
 
 .Icon {
-  margin-right: spacing(tight);
+  margin-left: spacing(tight);
 }
 
 .Text {

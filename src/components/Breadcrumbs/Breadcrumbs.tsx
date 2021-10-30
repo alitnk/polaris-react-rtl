@@ -1,5 +1,5 @@
 import React from 'react';
-import {ArrowLeftMinor} from '@shopify/polaris-icons';
+import {ArrowRightMinor} from '@shopify/polaris-icons';
 
 import {Icon} from '../Icon';
 import {UnstyledLink} from '../UnstyledLink';
@@ -25,7 +25,7 @@ export function Breadcrumbs({breadcrumbs}: BreadcrumbsProps) {
   const contentMarkup = (
     <span className={styles.ContentWrapper}>
       <span className={styles.Icon}>
-        <Icon source={ArrowLeftMinor} />
+        <Icon source={ArrowRightMinor} />
       </span>
       <VisuallyHidden>{content}</VisuallyHidden>
     </span>

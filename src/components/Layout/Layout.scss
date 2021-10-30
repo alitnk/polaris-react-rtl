@@ -12,7 +12,7 @@ $relative-size: $primary-basis / $secondary-basis;
   justify-content: center;
   align-items: flex-start;
   margin-top: -1 * spacing();
-  margin-left: -1 * spacing(loose);
+  margin-right: -1 * spacing(loose);
 
   @media print {
     body & {
@@ -64,7 +64,7 @@ $relative-size: $primary-basis / $secondary-basis;
 .AnnotatedSection {
   max-width: calc(100% - #{spacing(loose)});
   margin-top: spacing();
-  margin-left: spacing(loose);
+  margin-right: spacing(loose);
 
   + .AnnotatedSection {
     @include page-content-when-not-fully-condensed {
@@ -78,7 +78,7 @@ $relative-size: $primary-basis / $secondary-basis;
   display: flex;
   flex-wrap: wrap;
   margin-top: -1 * spacing();
-  margin-left: -1 * spacing(loose);
+  margin-right: -1 * spacing(loose);
 }
 
 .AnnotationContent {
@@ -103,7 +103,7 @@ $relative-size: $primary-basis / $secondary-basis;
   min-width: 0;
   max-width: calc(100% - #{spacing(loose)});
   margin-top: spacing();
-  margin-left: spacing(loose);
+  margin-right: spacing(loose);
 }
 
 .AnnotationDescription {

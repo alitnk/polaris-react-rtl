@@ -2,7 +2,7 @@
 @import './variables';
 
 $icon-size: rem(20px);
-$page-left-alignment-breakpoint-max: 1238px;
+$page-right-alignment-breakpoint-max: 1238px;
 $context-control-expand-after: 1400px;
 
 .TopBar {
@@ -38,8 +38,8 @@ $context-control-expand-after: 1400px;
   align-items: center;
   height: 100%;
   padding: 0 spacing(tight) 0 spacing(base);
-  @include safe-area-for(flex-basis, layout-width(nav), left);
-  @include safe-area-for(padding-left, spacing(), left);
+  @include safe-area-for(flex-basis, layout-width(nav), right);
+  @include safe-area-for(padding-right, spacing(), right);
 }
 
 .Logo,
@@ -63,8 +63,8 @@ $context-control-expand-after: 1400px;
   @include unstyled-button;
   position: relative;
   align-self: center;
-  margin-left: spacing(tight) + rem(2px);
-  margin-right: spacing(tight);
+  margin-right: spacing(tight) + rem(2px);
+  margin-left: spacing(tight);
   padding: spacing(tight);
   border-radius: border-radius();
   fill: var(--p-icon); // Icon will inherit this fill
@@ -84,7 +84,7 @@ $context-control-expand-after: 1400px;
     content: '';
     position: absolute;
     top: spacing(tight) * -1;
-    left: spacing(tight) * -1;
+    right: spacing(tight) * -1;
     width: calc(100% + #{spacing(loose)});
     height: calc(100% + #{spacing(loose)});
   }
@@ -112,11 +112,11 @@ $context-control-expand-after: 1400px;
   width: 100%;
   margin: 0;
   max-width: none;
-  margin-left: calc((100% - #{$page-max-width}) / 2);
+  margin-right: calc((100% - #{$page-max-width}) / 2);
 
-  @media (max-width: $page-left-alignment-breakpoint-max) {
-    margin-left: 0;
-    margin-right: spacing(extra-tight);
+  @media (max-width: $page-right-alignment-breakpoint-max) {
+    margin-right: 0;
+    margin-left: spacing(extra-tight);
   }
 }
 

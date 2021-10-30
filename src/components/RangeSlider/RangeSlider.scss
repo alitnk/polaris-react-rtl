@@ -9,7 +9,7 @@ $range-thumb-size: var(--p-range-slider-thumb-size-base);
   height: $range-track-height;
   width: 100%;
   background-image: linear-gradient(
-    to right,
+    to left,
     $dashedTrackColor,
     $dashedTrackColor 50%,
     transparent 50%,
@@ -17,5 +17,5 @@ $range-thumb-size: var(--p-range-slider-thumb-size-base);
   );
   background-size: $range-track-height $range-track-height;
   border-radius: $borderRadius;
-  border-right: $borderRadius $dashedTrackColor solid;
+  border-left: $borderRadius $dashedTrackColor solid;
 }

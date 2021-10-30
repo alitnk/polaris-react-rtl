@@ -21,11 +21,11 @@ $condensed-width: rem(50px);
 .expanded {
   width: $expanded-width;
   height: $expanded-height;
-  padding-left: spacing();
+  padding-right: spacing();
 }
 
 .condensed {
   min-width: $condensed-width;
   min-height: $condensed-height;
-  margin-right: -1 * $spacing-extra-loose;
+  margin-left: -1 * $spacing-extra-loose;
 }

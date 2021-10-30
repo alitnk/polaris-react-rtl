@@ -46,7 +46,7 @@ export function RollupActions({items = [], sections = []}: RollupActionsProps) {
     <Popover
       active={rollupOpen}
       activator={activatorMarkup}
-      preferredAlignment="right"
+      preferredAlignment="left"
       onClose={toggleRollupOpen}
       hideOnPrint
     >

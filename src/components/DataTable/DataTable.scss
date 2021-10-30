@@ -33,7 +33,7 @@ $breakpoint: 768px;
   border-radius: var(--p-border-radius-base);
 
   &:not(:last-of-type) {
-    margin-right: spacing(extra-tight);
+    margin-left: spacing(extra-tight);
   }
 }
 
@@ -69,18 +69,18 @@ $breakpoint: 768px;
 .Cell {
   padding: spacing();
   white-space: nowrap;
-  text-align: left;
+  text-align: right;
   transition: background-color 0.2s ease-in-out;
 }
 
 .Cell-firstColumn {
   @include text-emphasis-normal;
-  text-align: left;
+  text-align: right;
   white-space: normal;
 }
 
 .Cell-numeric {
-  text-align: right;
+  text-align: left;
 }
 
 .Cell-truncated {

@@ -40,9 +40,9 @@ $nav-animation-variables: (
   border-radius: var(--p-border-radius-base);
   color: var(--p-text);
   text-decoration: none;
-  text-align: left;
-  padding-left: spacing() - spacing(extra-tight);
-  padding-right: spacing(extra-tight);
+  text-align: right;
+  padding-right: spacing() - spacing(extra-tight);
+  padding-left: spacing(extra-tight);
 
   &:hover {
     background: var(--p-background-hovered);
@@ -83,11 +83,11 @@ $nav-animation-variables: (
   width: nav(icon-size);
   height: nav(icon-size);
   margin-top: nav(mobile-spacing);
-  margin-right: spacing();
+  margin-left: spacing();
   margin-bottom: nav(mobile-spacing);
   @include breakpoint-after(nav-min-window-corrected()) {
     margin-top: nav(desktop-spacing);
-    margin-right: spacing();
+    margin-left: spacing();
     margin-bottom: nav(desktop-spacing);
   }
 
@@ -164,7 +164,7 @@ $nav-animation-variables: (
     content: '';
     position: absolute;
     top: spacing(tight) * -1;
-    left: 0;
+    right: 0;
     display: block;
     width: 100%;
     height: 1px;

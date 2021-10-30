@@ -9,7 +9,7 @@ $base-position: rem(-4px);
     content: '';
     position: absolute;
     background-color: var(--p-border-highlight);
-    right: $base-position;
+    left: $base-position;
     top: $base-position;
     width: $size;
     height: $size;
@@ -24,7 +24,7 @@ $base-position: rem(-4px);
 }
 
 .pulseIndicator::after {
-  right: $base-position;
+  left: $base-position;
   top: $base-position;
   animation: pulse 5s ease infinite;
 }

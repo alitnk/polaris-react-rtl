@@ -76,7 +76,7 @@ export function Pagination({
   const prev = (
     <Button
       outline
-      icon={ChevronLeftMinor}
+      icon={ChevronRightMinor}
       accessibilityLabel={previousLabel}
       url={previousURL}
       onClick={onPrevious}
@@ -96,7 +96,7 @@ export function Pagination({
   const next = (
     <Button
       outline
-      icon={ChevronRightMinor}
+      icon={ChevronLeftMinor}
       accessibilityLabel={nextLabel}
       url={nextURL}
       onClick={onNext}

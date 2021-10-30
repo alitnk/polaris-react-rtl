@@ -127,7 +127,7 @@ $list-filters-footer-height: rem(70px);
   &::after {
     content: '';
     position: relative;
-    left: spacing(base);
+    right: spacing(base);
     width: calc(100% - #{rem(32px)});
     height: rem(1px);
     background-color: var(--p-surface-subdued);
@@ -148,7 +148,7 @@ $list-filters-footer-height: rem(70px);
     content: '';
     bottom: 0;
     position: relative;
-    left: spacing(base);
+    right: spacing(base);
     width: calc(100% - #{rem(32px)});
     height: rem(1px);
     background-color: var(--p-surface-subdued);
@@ -171,7 +171,7 @@ $list-filters-footer-height: rem(70px);
     content: '';
     top: 0;
     position: relative;
-    left: spacing(base);
+    right: spacing(base);
     width: calc(100% - #{rem(32px)});
     height: rem(1px);
     background-color: var(--p-surface-subdued);
@@ -218,7 +218,7 @@ $list-filters-footer-height: rem(70px);
   flex-wrap: wrap;
 
   > * {
-    margin-right: spacing(tight);
+    margin-left: spacing(tight);
     margin-bottom: spacing(tight);
   }
 }

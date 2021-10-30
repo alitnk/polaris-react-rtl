@@ -12,12 +12,12 @@
 
   @include page-content-when-not-fully-condensed {
     display: block;
-    margin-left: spacing(loose);
+    margin-right: spacing(loose);
   }
 }
 
 .DismissImage {
-  margin-right: spacing(loose);
+  margin-left: spacing(loose);
 }
 
 .Content {
@@ -37,11 +37,11 @@
 }
 
 .Dismiss {
-  right: spacing();
+  left: spacing();
   top: spacing();
   position: absolute;
 }
 
 .hasDismiss {
-  padding-right: calc(#{2 * spacing()} + var(--p-icon-size));
+  padding-left: calc(#{2 * spacing()} + var(--p-icon-size));
 }

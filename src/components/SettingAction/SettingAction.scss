@@ -7,14 +7,14 @@ $feature-width: rem(350px);
   flex-wrap: wrap;
   align-items: center;
   margin-top: -1 * spacing();
-  margin-left: -1 * spacing();
+  margin-right: -1 * spacing();
 }
 
 .Setting,
 .Action {
   flex: 0 0 auto;
   margin-top: spacing();
-  margin-left: spacing();
+  margin-right: spacing();
   max-width: calc(100% - #{spacing()});
   min-width: 0;
 }

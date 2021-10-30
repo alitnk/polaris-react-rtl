@@ -47,18 +47,18 @@ export function Navigation({
     <div className={styles.Navigation}>
       <Button
         plain
-        icon={ChevronLeftMinor}
-        disabled={isScrolledFarthestLeft}
-        accessibilityLabel={leftA11yLabel}
-        onClick={navigateTableLeft}
-      />
-      {pipMarkup}
-      <Button
-        plain
         icon={ChevronRightMinor}
         disabled={isScrolledFarthestRight}
         accessibilityLabel={rightA11yLabel}
         onClick={navigateTableRight}
+      />
+      {pipMarkup}
+      <Button
+        plain
+        icon={ChevronLeftMinor}
+        disabled={isScrolledFarthestLeft}
+        accessibilityLabel={leftA11yLabel}
+        onClick={navigateTableLeft}
       />
     </div>
   );

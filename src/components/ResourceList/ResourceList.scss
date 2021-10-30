@@ -101,19 +101,19 @@ $item-wrapper-loading-height: rem(64px);
   align-items: center;
 
   .HeaderWrapper-hasSelect & {
-    padding-right: spacing(tight);
+    padding-left: spacing(tight);
   }
 
   @include breakpoint-after(resource-list(breakpoint-small)) {
     position: relative;
-    left: auto;
+    right: auto;
     flex: 0 1 auto;
-    margin-left: spacing();
+    margin-right: spacing();
 
     // stylelint-disable-next-line selector-max-class
     .HeaderWrapper-hasAlternateTool.HeaderWrapper-hasSelect &,
     .HeaderWrapper-hasSort.HeaderWrapper-hasSelect & {
-      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
@@ -130,7 +130,7 @@ $item-wrapper-loading-height: rem(64px);
   white-space: nowrap;
   text-overflow: ellipsis;
   flex: 1;
-  padding-left: spacing(extra-tight);
+  padding-right: spacing(extra-tight);
   align-self: center;
 
   .HeaderWrapper-hasAlternateTool &,

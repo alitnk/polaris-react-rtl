@@ -15,7 +15,7 @@ $skip-vertical-offset: rem(10px);
 
   @include frame-when-nav-displayed {
     width: calc(100% - var(--p-frame-offset));
-    margin-left: var(--p-frame-offset);
+    margin-right: var(--p-frame-offset);
   }
 }
 
@@ -24,7 +24,7 @@ $skip-vertical-offset: rem(10px);
   position: fixed;
   z-index: z-index(nav, $fixed-element-stacking-order);
   top: 0;
-  left: 0;
+  right: 0;
   display: none;
   flex: 0 0 auto;
   align-items: stretch;
@@ -34,7 +34,7 @@ $skip-vertical-offset: rem(10px);
 
   @include frame-when-nav-displayed {
     z-index: 1;
-    left: var(--p-frame-offset);
+    right: var(--p-frame-offset);
     display: flex;
 
     .hasTopBar & {
@@ -56,7 +56,7 @@ $skip-vertical-offset: rem(10px);
 }
 
 .Navigation-enter {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .Navigation-enterActive {
@@ -69,7 +69,7 @@ $skip-vertical-offset: rem(10px);
 }
 
 .Navigation-exitActive {
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: transform duration(slow) easing(out);
 }
 
@@ -79,7 +79,7 @@ $skip-vertical-offset: rem(10px);
   @include focus-ring;
   position: absolute;
   top: 0;
-  left: 100%;
+  right: 100%;
   width: $button-size;
   height: $button-size;
   margin: spacing();
@@ -123,12 +123,12 @@ $skip-vertical-offset: rem(10px);
   position: fixed;
   z-index: z-index(top-bar, $fixed-element-stacking-order);
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: top-bar-height();
 
   @include frame-when-nav-displayed {
-    left: var(--p-frame-offset);
+    right: var(--p-frame-offset);
     width: calc(100% - var(--p-frame-offset));
   }
 }
@@ -137,11 +137,11 @@ $skip-vertical-offset: rem(10px);
   position: fixed;
   z-index: z-index(context-bar, $fixed-element-stacking-order);
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
 
   @include frame-when-nav-displayed {
-    left: var(--p-frame-offset);
+    right: var(--p-frame-offset);
     width: calc(100% - var(--p-frame-offset));
   }
 }
@@ -159,11 +159,11 @@ $skip-vertical-offset: rem(10px);
 
   @include frame-when-nav-displayed {
     .hasNav & {
-      padding-left: layout-width(nav);
+      padding-right: layout-width(nav);
       @include when-printing {
-        padding-left: 0;
+        padding-right: 0;
       }
-      @include safe-area-for(padding-left, layout-width(nav), left);
+      @include safe-area-for(padding-right, layout-width(nav), right);
     }
   }
 
@@ -189,14 +189,14 @@ $skip-vertical-offset: rem(10px);
   width: 100%;
 
   @include frame-when-nav-displayed {
-    left: var(--p-frame-offset);
+    right: var(--p-frame-offset);
 
     .hasNav & {
-      left: calc(#{layout-width(nav)} + var(--p-frame-offset));
+      right: calc(#{layout-width(nav)} + var(--p-frame-offset));
       @include safe-area-for(
-        left,
+        right,
         calc(#{layout-width(nav)} + var(--p-frame-offset)),
-        left
+        right
       );
       width: calc(100% - #{layout-width(nav)} - var(--p-frame-offset));
     }
@@ -213,7 +213,7 @@ $skip-vertical-offset: rem(10px);
 
   @include frame-when-nav-displayed {
     .hasNav & {
-      left: var(--p-frame-offset);
+      right: var(--p-frame-offset);
     }
 
     .hasTopBar & {
@@ -230,7 +230,7 @@ $skip-vertical-offset: rem(10px);
   position: fixed;
   z-index: z-index(skip-to-content, $fixed-element-stacking-order);
   top: $skip-vertical-offset;
-  left: calc(#{spacing(tight)} + var(--p-frame-offset));
+  right: calc(#{spacing(tight)} + var(--p-frame-offset));
   opacity: 0;
   pointer-events: none;
 
