@@ -47,7 +47,7 @@
     },
     "DataTable": {
       "sortAccessibilityLabel": "طبقه بندی {direction} بر اساس",
-      "navAccessibilityLabel": "جدول را یک ستون {direction} one column",
+      "navAccessibilityLabel": "جدول را یک ستون به {direction} ببر",
       "totalsRowHeading": "جمع کل",
       "totalRowHeading": "جمع"
     },
