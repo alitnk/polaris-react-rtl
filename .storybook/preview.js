@@ -6,6 +6,7 @@ import DefaultThemeColors from '@shopify/polaris-tokens/dist-modern/theme/base.j
 
 import {AppProvider} from '../src';
 import enTranslations from '../locales/en.json';
+import faTranslations from '../locales/fa.json';
 
 function StrictModeToggle({isStrict = false, children}) {
   const Wrapper = isStrict ? React.StrictMode : React.Fragment;
@@ -32,15 +33,17 @@ function AppProviderWithKnobs({colorScheme, children}, context) {
   );
 
   return (
-    <AppProvider
-      i18n={enTranslations}
-      theme={{
-        colors,
-        colorScheme,
-      }}
-    >
-      {children}
-    </AppProvider>
+    <div dir="rtl">
+      <AppProvider
+        i18n={faTranslations}
+        theme={{
+          colors,
+          colorScheme,
+        }}
+      >
+        {children}
+      </AppProvider>
+    </div>
   );
 }
 
