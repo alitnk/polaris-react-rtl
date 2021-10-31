@@ -1,14 +1,14 @@
 {
-  "name": "@shopify/polaris",
-  "description": "Shopify’s admin product component library",
+  "name": "polaris-rtl",
+  "description": "Shopify’s admin product component library, in RTL",
   "version": "7.2.0",
   "private": false,
   "license": "SEE LICENSE IN LICENSE.md",
-  "author": "Shopify <dev@shopify.com>",
+  "author": "Alireza Zamani <alirezazamani2922@gmail.com>",
   "homepage": "https://polaris.shopify.com/components",
-  "repository": "https://github.com/Shopify/polaris-react",
+  "repository": "https://github.com/alitnk/polaris-react-rtl",
   "bugs": {
-    "url": "https://github.com/Shopify/polaris-react/issues"
+    "url": "https://github.com/alitnk/polaris-react-rtl/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -30,7 +30,8 @@
     "polaris",
     "react",
     "components",
-    "component library"
+    "component library",
+    "rtl"
   ],
   "main": "build/cjs/index.js",
   "module": "build/esm/index.js",
