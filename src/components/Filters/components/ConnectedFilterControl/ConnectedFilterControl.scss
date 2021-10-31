@@ -61,7 +61,7 @@ $stacking-order: (
   display: flex;
 
   .Item > div > button {
-    margin-right: var(--p-button-group-item-spacing);
+    margin-left: var(--p-button-group-item-spacing);
     border-radius: 0;
   }
 

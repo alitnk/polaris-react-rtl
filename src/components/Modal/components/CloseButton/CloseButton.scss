@@ -3,8 +3,8 @@
 .CloseButton {
   @include unstyled-button;
   @include focus-ring;
-  margin-left: spacing(loose);
-  margin-right: -1 * spacing(tight);
+  margin-left: -1 * spacing(tight);
+  margin-right: spacing(loose);
   padding: spacing(tight);
   border-radius: border-radius(large);
 

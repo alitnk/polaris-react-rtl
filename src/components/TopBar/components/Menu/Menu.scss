@@ -31,7 +31,7 @@ $activator-variables: (
   border: 0;
   cursor: pointer;
   transition: menu(transition);
-  margin-right: spacing(tight);
+  margin-left: spacing(tight);
   border-radius: border-radius();
 
   &:focus {
