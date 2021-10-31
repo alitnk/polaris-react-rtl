@@ -1,7 +1,7 @@
 {
   "name": "polaris-rtl",
   "description": "Shopify’s admin product component library, in RTL",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "private": false,
   "license": "SEE LICENSE IN LICENSE.md",
   "author": "Alireza Zamani <alirezazamani2922@gmail.com>",
