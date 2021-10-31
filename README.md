@@ -1,3 +1,18 @@
+# RTL Fork of Polaris React
+
+This is the RTL fork of Shopify's component library, Polaris.
+
+All of the styles (Sass files) and components have been changed and tweaked for RTL use. So just like Polaris, you could use the react components, or just use the css file directly.
+
+To install, run
+```shell
+npm install polaris-rtl
+
+//or
+
+yarn add polaris-rtl
+```
+
 # [Polaris React](https://polaris.shopify.com/)
 
 [![npm version](https://img.shields.io/npm/v/@shopify/polaris.svg?style=flat)](https://www.npmjs.com/package/@shopify/polaris) ![CI](https://github.com/shopify/polaris-react/workflows/CI/badge.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Shopify/polaris-react/blob/main/.github/CONTRIBUTING.md#your-first-pull-request)
