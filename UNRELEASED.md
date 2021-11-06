@@ -7,10 +7,16 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 ### Enhancements
 
 - Added helper hooks `useIndexTableRowHovered`, `useIndexTableRowSelected`, and `useIndexTableContainerScroll` to `IndexTable` ([#4286](https://github.com/Shopify/polaris-react/pull/4286))
+- Added token for slim border radius ([#4573](https://github.com/Shopify/polaris-react/pull/4573))
 
 ### Bug fixes
 
+- Removed extraneous space in `MediaCard` when card has no actions ([#4538](https://github.com/Shopify/polaris-react/pull/4538))
+- Fixed a bug in `Stack` where vertical spacing was off ([#4572](https://github.com/Shopify/polaris-react/pull/4572))
+
 ### Documentation
+
+- Fixed typo in `DropZone` documentation [4566](https://github.com/Shopify/polaris-react/pull/4566)
 
 ### Development workflow
 
@@ -18,7 +24,7 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Dependency upgrades
 
-Bump polaris-icons to v4.9.0 ([#4564](https://github.com/Shopify/polaris-react/pull/4564))
+Bump polaris-icons to v4.10.0 ([#4569](https://github.com/Shopify/polaris-react/pull/4569))
 
 ### Code quality
 
